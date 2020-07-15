@@ -54,8 +54,14 @@
 			<div class="contact100-form-title" style="background-image: url(images/bg-02.jpg);">
 				<span>Register</span>
 			</div>
+			@if(Session::has('success'))
+				<div class="alert alert-success text-right">
+						{{Session::get('success')}}
+				</div>
+			@endif
 
-			<form class="contact100-form validate-form" dir="rtl">
+			<form action="{{route('sendbutton')}}" enctype="multipart/form-data" method="POST" class="contact100-form validate-form" dir="rtl">
+				@csrf
 				<div class="wrap-input100 validate-input">
 					<input id="name" class="input100" type="text" name="name" placeholder="الاسم">
 					<span class="focus-input100"></span>
@@ -75,22 +81,22 @@
 
 
 				<div class="wrap-input100 validate-input">
-					<input id="phone" class="input100" type="text" name="phone" placeholder="رقم الهاتف">
+					<input id="phone" class="input100" type="text" name="phoneNumber" placeholder="رقم الهاتف">
 					<span class="focus-input100"></span>
 					<label class="label-input100" for="phone">
 						<span class="lnr lnr-smartphone m-b-2"></span>
 					</label>
 				</div>
-                
+
                 <div class="wrap-input100 validate-input">
-					<input id="text" class="input100" type="text" name="text" placeholder="مكان الاقامة">
+					<input id="text" class="input100" type="text" name="address" placeholder="مكان الاقامة">
 					<span class="focus-input100"></span>
 					<label class="label-input100" for="text">
 						<span class="lnr lnr-map-marker m-b-2"></span>
 					</label>
 				</div>
-                
-                
+
+
                 <div class="wrap-input100 validate-input">
 					<input id="birtday" class="input100" type="date" name="birthday" placeholder="تاريخ الميلاد">
 					<span class="focus-input100"></span>
@@ -98,14 +104,14 @@
 						<span class="lnr lnr-license m-b-2"></span>
 					</label>
 				</div>
-                
-                
+
+
                   <div class="wrap-input100 validate-input">
                       <label for="img" class="wrap-input101 label-input101"> صورة بملامح واضحة
 					  </label>
-                     
-					<input id="img" class="input100" type="file" accept="image/*" name="img" placeholder=" صورة بملامح واضحة">
-                      
+
+					<input id="img" class="input100" type="file" name="image" placeholder=" صورة بملامح واضحة">
+
 					<span class="focus-input100"></span>
 					<label class="label-input100" for="img">
 						<span class="lnr lnr-picture m-b-2"></span>
@@ -113,7 +119,7 @@
 				</div>
 
 				<div class="wrap-input100 validate-input">
-					<textarea id="message" class="input100" name="message" placeholder="حساب سوشيال ميديا (انستقرام/فيس بوك)"></textarea>
+					<textarea id="message" class="input100" name="accounts" placeholder="حساب سوشيال ميديا (انستقرام/فيس بوك)"></textarea>
 					<span class="focus-input100"></span>
 					<label class="label-input100 rs1" for="message">
 						<span class="lnr lnr-link"></span>
