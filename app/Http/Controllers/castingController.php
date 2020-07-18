@@ -31,8 +31,9 @@ class castingController extends Controller
 
       $cv->save();
 
-      return redirect('/casting')->with('success','تم ارسال رسالتك بنجاح , شكـراً جزيلاً لك');
+      return redirect('/')->with('success','تم ارسال رسالتك بنجاح , شكـراً جزيلاً لك');
 
     }
+
 
   }
