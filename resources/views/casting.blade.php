@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->
-	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+	<link rel="icon" type="image/png" href="images/logotitle.png"/>
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
 <!--===============================================================================================-->
@@ -33,7 +33,7 @@
 
 	<div class="bg-container-contact100" style="background-image: url(images/bg1.jpg);">
 		<div class="contact100-header flex-sb-m">
-			<a href="#" class="contact100-header-logo">
+			<a href="http://mawja.ly/" target="_blanck" class="contact100-header-logo">
 				<img src="images/icons/logo.png" alt="LOGO">
 			</a>
 
