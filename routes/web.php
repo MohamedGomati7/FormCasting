@@ -19,3 +19,6 @@ Route::get('/dashboard','dashboardController@index')->middleware('auth');
 
 // single caster view
 Route::get('/view/{id}','dashboardController@view')->middleware('auth');
+
+ 
+ 

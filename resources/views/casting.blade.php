@@ -31,7 +31,7 @@
 </head>
 <body>
 
-	<div class="bg-container-contact100" style="background-image: url(images/bg-01.jpg);">
+	<div class="bg-container-contact100" style="background-image: url(images/bg1.jpg);">
 		<div class="contact100-header flex-sb-m">
 			<a href="#" class="contact100-header-logo">
 				<img src="images/icons/logo.png" alt="LOGO">
@@ -51,8 +51,8 @@
 				<i class="zmdi zmdi-close"></i>
 			</button>
 
-			<div class="contact100-form-title" style="background-image: url(images/bg-02.jpg);">
-				<span>Register</span>
+			<div class="contact100-form-title" style="background-image: url(images/bg2.jpg);">
+				{{-- <span>Register</span> --}}
 			</div>
 			@if(Session::has('success'))
 				<div class="alert alert-success text-right">
