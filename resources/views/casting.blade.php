@@ -117,7 +117,7 @@
 						<span class="lnr lnr-picture m-b-2"></span>
 					</label>
 				</div>
-
+ 
 				<div class="wrap-input100 validate-input">
 					<textarea id="message" class="input100" name="accounts" placeholder="حساب سوشيال ميديا (انستقرام/فيس بوك)"></textarea>
 					<span class="focus-input100"></span>
