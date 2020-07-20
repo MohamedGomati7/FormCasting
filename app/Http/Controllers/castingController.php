@@ -8,7 +8,7 @@ use App\cvs;
 class castingController extends Controller
 {
     public function casting() {
-        return view ('/casting'); 
+        return view ('casting'); 
     }
 
     public function send(Request $request){
