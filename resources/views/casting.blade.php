@@ -51,7 +51,7 @@
 				<i class="zmdi zmdi-close"></i>
 			</button>
 
-			<div class="contact100-form-title" style="background-image: url(images/bg2.jpg);">
+			<div class="contact100-form-title" style="background-image: url(images/pic2.png);">
 				{{-- <span>Register</span> --}}
 			</div>
 			@if(Session::has('success'))
