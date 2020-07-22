@@ -28,6 +28,7 @@ class castingController extends Controller
       $cv->birthday = request('birthday');
       $cv->image = '/storage/'.$path;
       $cv->accounts = request('accounts');
+      $cv->talent =  request('talent'); 
 
       $cv->save();
 

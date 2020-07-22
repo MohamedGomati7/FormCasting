@@ -109,7 +109,7 @@
 				<div class="wrap-input100 validate-input">
 					<textarea id="message" class="input100" name="talent" placeholder=" الموهبة "></textarea>
 					<span class="focus-input100"></span>
-					<label class="label-input100  " for="message">
+					<label class="label-input100  " for="talent">
 						{{-- <span class="lnr lnr-link"></span> --}}
 					</label>
 				</div>
