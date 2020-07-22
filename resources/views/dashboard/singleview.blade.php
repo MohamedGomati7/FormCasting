@@ -38,6 +38,11 @@
                         </ul>
                         <hr>
                         <div class="container text-right">
+                            <p>{{$cv->talent}}</p>
+                        </div>
+                        <hr>
+                        <hr>
+                        <div class="container text-right">
                             <p>{{$cv->accounts}}</p>
                         </div>
                         <hr>

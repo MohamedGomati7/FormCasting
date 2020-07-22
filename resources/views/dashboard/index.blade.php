@@ -66,7 +66,7 @@
                             <div class="gaadiex-list-item-text text-right">
                                 <h3><a href="/view/{{$cv->id}}">{{$cv->name}}</a></h3>
                                 <h4>{{$cv->email}}</h4>
-                                <p>{{$cv->address}}{{$cv->phoneNumber}}</p>
+                                <p>{{$cv->talent}}</p>
                             </div>
                         </div>
                         @endforeach

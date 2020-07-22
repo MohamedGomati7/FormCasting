@@ -20,6 +20,7 @@ class CreateCvsTable extends Migration
             $table->string('phoneNumber');
             $table->string('address');
             $table->string('birthday');
+            $table->string('talent');
             $table->string('image');
             $table->mediumText('accounts');
             $table->timestamps();

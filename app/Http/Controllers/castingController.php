@@ -8,7 +8,7 @@ use App\cvs;
 class castingController extends Controller
 {
     public function casting() {
-        return view ('casting'); 
+        return view ('casting');
     }
 
     public function send(Request $request){
@@ -26,9 +26,10 @@ class castingController extends Controller
       $cv->phoneNumber = request('phoneNumber');
       $cv->address = request('address');
       $cv->birthday = request('birthday');
+      $cv->talent = request('talent');
       $cv->image = '/storage/'.$path;
       $cv->accounts = request('accounts');
-      $cv->talent =  request('talent'); 
+      $cv->talent =  request('talent');
 
       $cv->save();
 
